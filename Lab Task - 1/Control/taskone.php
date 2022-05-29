@@ -12,17 +12,17 @@ echo "1st number ".$name2;
 echo"<br>";
 
 if ($func == "+") {
-    echo $name + $name2;  
+    echo"Addition: " $name + $name2;  
 }
 
 if ($func == "-") {
-    echo $name - $name2;
+    echo"Subtraction: " $name - $name2;
 }
 
 if ($func == "*") {
-    echo $name * $name2;
+    echo"Multiplication:" $name * $name2;
 }
 
 if ($func == "/") {
-    echo $name / $name2;
+    echo"Division: " $name / $name2;
 }
