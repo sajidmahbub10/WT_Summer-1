@@ -35,7 +35,7 @@
             <tr>
                 <td>
                     Preferred Language : <name="PreferredLanguage">            
-                    <input type="checkbox" name="PreferredLanguage1" >JAVA
+                    <input type="checkbox" name="PreferredLanguage1">JAVA
                     <input type="checkbox" name="PreferredLanguage2"> PHP
                     <input type="checkbox" name="PreferredLanguage3"> C++
                 </td>
