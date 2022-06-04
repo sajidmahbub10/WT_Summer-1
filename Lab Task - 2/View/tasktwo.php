@@ -46,7 +46,7 @@
             </tr>
 
             <tr>
-                <td>Password : <input type ="password" name ="pass" placeholder = "Enter Desired Password"><br></td>
+                <td>Password : <input type ="password" name ="pass" placeholder = "Enter Valid Password"><br></td>
             </tr>
 
             <tr>
