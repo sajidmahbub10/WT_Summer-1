@@ -76,6 +76,14 @@ if (isset($_POST['submit'])) {
     if (strlen($password) < 8) {
         echo 'Enter a Valid password';
     } else {
-        echo 'Password is Valid';
+        echo 'Password is Valid <br>';
+    }
+
+    echo $_FILES["myfile"]["name"];
+    if (move_uploaded_file($_FILES["myfile"]["tmp_name"], "../uploads/module_table_top.png")) {
+        echo "File Uploaded";
+    } else {
+        echo "<br> uploading error";
+        echo $_FILES["myfile"]["error"];
     }
 }

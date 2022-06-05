@@ -57,7 +57,7 @@ include("../Control/process.php");
             </tr>
 
             <tr>
-                <td>Please choose a file <input type="file"><br></td>
+                <td>Please choose a file <input type="file" name="myfile"><br></td>
             </tr>
 
             <tr>
