@@ -25,6 +25,10 @@
             <tr>
                 <td>Password: <input type="password" name="pass" placeholder="enter password"></td>
             </tr>
+
+            <tr>
+                <td><input type="submit" name="submit" value="submit"></td>
+            </tr>
         </table>
     </form>
 
