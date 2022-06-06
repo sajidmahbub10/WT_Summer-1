@@ -14,11 +14,11 @@
     <form action="" method="post">
         <table>
             <tr>
-                <td>First Name: <input type="text" name="fname" placeholder="enter your first name"></td>
+                <td>First Name: <input type="text" name="firstname" placeholder="enter your first name"></td>
             </tr>
 
             <tr>
-                <td>Last Name: <input type="text" name="lname" placeholder="enter your last name"><br></td>
+                <td>Last Name: <input type="text" name="lastname" placeholder="enter your last name"><br></td>
             </tr>
 
             <tr>
