@@ -1,5 +1,22 @@
 <?php
+$formdata = array(
+    'firstname' => $_POST["firstname"],
+    'lastname' => $_POST["lastname"],
+    'email' => $_POST["email"],
+    'password' => $_POST["pass"]
+);
 
+$existingdata = file_get_contents('../Data/data.json');
+
+$tempJSONdara = json_decode($existingdata);
+$tempJSONdara[] = $formdata;
+$jsondata = json_encode($existingdata, JSON_PRETTY_PRINT);
+
+if (file_put_contents("data.json", $jsondata)) {
+    echo "Data Successfully Saved <br>";
+} else {
+    echo "no data saved";
+}
 if(isset($_POST['submit']))
 {
     $firstname = $_REQUEST['firstname'];
@@ -34,30 +51,11 @@ if(isset($_POST['submit']))
         echo 'Your Email Address is ' . $email . '<br>';
     }
 
-    $password = $_REQUEST['password'];
-    if (strlen($password) < 8) {
+    $pass = $_REQUEST['pass'];
+    if (strlen($pass) < 8) {
         echo 'Enter a Valid password';
     } else {
         echo 'Password is Valid <br>';
     }
-}
-
-$formdata = array(
-    'firstname' => $_POST["firstname"],
-    'lastname' => $_POST["lastname"],
-    'email' => $_POST["email"],
-    'password' => $_POST["pass"]
-);
-
-$existingdata = file_get_contents('../Data/data.json');
-
-$tempJSONdara = json_decode($existingdata);
-$tempJSONdara[] = $formdata;
-$jsondata = json_encode($existingdata, JSON_PRETTY_PRINT);
-
-if (file_put_contents("data.json", $jsondata)) {
-    echo "Data Successfully Saved <br>";
-} else {
-    echo "no data saved";
 }
 ?>
