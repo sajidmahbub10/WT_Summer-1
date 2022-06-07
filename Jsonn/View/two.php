@@ -24,7 +24,7 @@
         <input type="text" name="mobile">
         <br><br>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="submit">
     </form>
 </body>
 </html>

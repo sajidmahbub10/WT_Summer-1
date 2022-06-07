@@ -1,4 +1,13 @@
 <?php
+$name = "";
+if(isset($_POST['submit']))
+{
+	$firstName = $_REQUEST['firstName'];
+	if(empty($firstName))
+	{
+		$name = "Please Enter Your First Name";
+	}
+}
 	$fordata = array
 	(
 		'firstName' => $_POST["firstName"],
@@ -21,7 +30,4 @@
 	{
 		echo "No data Saved";
 	}
-
-	$data = file_get_contents("../Data/data.json");
-	$mydata = json_decode($data);
 ?>
