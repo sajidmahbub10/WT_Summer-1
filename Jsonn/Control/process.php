@@ -11,19 +11,19 @@ if(isset($_POST['submit']))
 	$data_array = json_decode($data, true);
 
 	$fordata = array(
-		'firstName' => $_POST["firstName"],
-		'lastName' => $_POST["lastName"],
-		'email'  => $_POST["email"],
-		'mobile' => $_POST["mobile"]
+		'firstName' => $firstName,
+		'lastName' => $lastName,
+		'email'  => $email,
+		'mobile' => $mobile
 	);
 
 	$data_array[] = $fordata;
 
 	$new_data = json_encode($data_array);
 
-	if(file_put_contents('..//Data/data.json', $new_data))
+	if(file_put_contents('../Data/data.json', $new_data))
 	{
-		echo "Data Ssaved Successfully";
+		echo "Data Saved Successfully";
 	}
 	else
 	{
