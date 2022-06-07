@@ -1,12 +1,8 @@
 <?php
-$name = "";
+
 if(isset($_POST['submit']))
 {
-	$firstName = $_REQUEST['firstName'];
-	if(empty($firstName))
-	{
-		$name = "Please Enter Your First Name";
-	}
+	
 }
 	$fordata = array
 	(
