@@ -17,6 +17,17 @@ if(isset($_POST['submit']))
 		'mobile' => $_POST["mobile"]
 	);
 
-	
+	$data_array[] = $fordata;
+
+	$new_data = json_encode($data_array);
+
+	if(file_put_contents('..//Data/data.json', $new_data))
+	{
+		echo "Data Ssaved Successfully";
+	}
+	else
+	{
+		echo "No Data Saved";
+	}
 }
 ?>
