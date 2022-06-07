@@ -1,39 +1,72 @@
-<?php
-    include("../Control/process.php");
-?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
 </head>
+
 <body>
-    <h1>Regiatration form</h1>
-    <form action="" method="post">
-        <table>
-            <tr>
-                <td>First Name: <input type="text" name="firstname" placeholder="enter your first name"></td>
-            </tr>
+    <br />
+    <div class="container" style="width:500px;">
+        <form method="post">
+            <?php
+            if (isset($error)) {
+                echo $error;
+            }
+            ?>
+            <br />
 
-            <tr>
-                <td>Last Name: <input type="text" name="lastname" placeholder="enter your last name"><br></td>
-            </tr>
+            <fieldset>
+                <legend>
+                    <h3>REGISTRATION</h3>
+                </legend>
 
-            <tr>
-                <td>Email: <input type="email" name="email" placeholder="enter email" autocomplete="on"></td>
-            </tr>
+                <label>Name &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp :</label>
+                <input type="text" name="name" class="form-control" /> <br>
+                <hr>
+                <label>Email &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp :</label>
+                <input type="text" name="email" class="form-control" /> <b>i</b><br>
+                <hr>
+                <label>User Name &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp :</label>
+                <input type="text" name="un" class="form-control" /> <br>
+                <hr>
+                <label>Password &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp :</label>
+                <input type="password" name="pass" class="form-control" /> <br>
+                <hr>
+                <label>Confirm Password &nbsp :</label>
+                <input type="password" name="Cpass" class="form-control" /> <br>
+                <hr>
 
-            <tr>
-                <td>Password: <input type="password" name="pass" placeholder="enter password"></td>
-            </tr>
 
-            <tr>
-                <td><input type="submit" name="submit" value="submit"></td>
-            </tr>
-        </table>
-    </form>
+                <fieldset>
+                    <legend>Gender</legend>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label> <br>
+                </fieldset>
+                <hr>
 
+                <fieldset>
+                    <legend>Date of Birth:</legend> <br>
+
+                    <input type="date" name="dob"> <br>
+
+                </fieldset>
+                <hr>
+
+                <input type="submit" name="submit" value="Submit" class="btn btn-info" /> <input type="reset" value="Reset"> <br> <br>
+
+                <?php
+                if (isset($message)) {
+                    echo $message;
+                }
+                ?>
+
+            </fieldset>
+        </form>
+    </div>
 </body>
+
 </html>
