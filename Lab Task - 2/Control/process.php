@@ -72,7 +72,7 @@ if (isset($_POST['submit'])) {
         echo 'Your Email Address is ' . $email . '<br>';
     }
 
-    $password = $_REQUEST['password'];
+    $password = $_REQUEST['pass'];
     if (strlen($password) < 8) {
         echo 'Enter a Valid password';
     } else {
