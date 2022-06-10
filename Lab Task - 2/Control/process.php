@@ -1,7 +1,7 @@
 <?php
 $namerr = "";
 if (isset($_POST['submit'])) {
-    $fname = $_REQUEST['FirstName'];
+    $fname = $_REQUEST['fname'];
     if (empty($fname)) {
         $namerr = "Please Enter Your First Name";
     } else {
@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     }
     echo '<br>';
 
-    $lname = $_REQUEST['LastName'];
+    $lname = $_REQUEST['lname'];
     if (empty($lname)) {
         echo 'Please Enter Your Last Name';
     } else {
@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
 
     echo '<br>';
 
-    $age = $_REQUEST['Age'];
+    $age = $_REQUEST['age'];
 
     if ($age == '') {
         echo 'Please Enter Your Age ';
