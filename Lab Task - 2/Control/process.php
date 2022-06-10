@@ -64,7 +64,7 @@ if (isset($_POST['submit'])) {
         echo '<br>';
     }
 
-    $email = $_POST['Email'];
+    $email = $_POST['email'];
     if (empty($email) || !preg_match('/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix', $email)) {
         echo 'Invalid Email';
         echo '<br>';
