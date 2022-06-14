@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['Submit']))
+if (isset($_POST['submit']))
 
 {
     $FirsName = $_REQUEST['FirstName'];
@@ -7,7 +7,7 @@ if (isset($_POST['Submit']))
     {
         echo 'Please Enter a valid First Name';
     }
-         else 
+    else 
     {
         echo 'Your First Name is ' . $FirsName;
     }
@@ -35,24 +35,22 @@ if (isset($_POST['Submit']))
     }
 
     echo '<br>';
-    
+
     if (
-        isset($_POST['Desgination1']) ||    // null kina  isset check kore radio button r error
-        isset($_POST['Desgination2']) ||
-        isset($_POST['Desgination3'])) 
+        isset($_POST['designation1']) || isset($_POST['Desgination2']) || isset($_POST['Desgination3']))
         {
-        if (isset($_POST['Desgination1'])) {
-            echo 'Your Have Selected Junior Programmer ';
-            echo '<br>';
-        }
-        if (isset($_POST['Desgination2'])) {
-            echo 'Your Have Selected Senior Programmer';
-            echo '<br>';
-        }
-        if (isset($_POST['Desgination3'])) {
-            echo 'Your Have Selected Project Lead';
-            echo '<br>';
-        }
+            if (isset($_POST['Desgination1'])) {
+                echo 'Your Have Selected Junior Programmer ';
+                echo '<br>';
+            }
+            if (isset($_POST['designation2'])) {
+                echo 'Your Have Selected Senior Programmer';
+                echo '<br>';
+            }
+            if (isset($_POST['designation3'])) {
+                echo 'Your Have Selected Project Lead';
+                echo '<br>';
+            }
     } else {
         echo 'You Have not selected anything';
     }
@@ -106,6 +104,5 @@ if (isset($_POST['Submit']))
         echo 'password is valid';
     }
 
-
-
 }
+?>
