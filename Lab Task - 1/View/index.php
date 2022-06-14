@@ -23,13 +23,13 @@
 
             <tr>
                 <td>Sum:</td>
-                <td><input type="radio" name="func" value="+"> <label for="func">plus</label></td>
+                <td><input type="radio" name="func" value="+">plus
 
-                <td><input type="radio" name="func" value="-"> <label for="func">minus</label></td>
+                <input type="radio" name="func" value="-">minus
 
-                <td><input type="radio" name="func" value="*"> <label for="func">multiplication</label></td>
+                <input type="radio" name="func" value="*">multiplication
 
-                <td><input type="radio" name="func" value="/"> <label for="func">dividation</label></td>
+                <input type="radio" name="func" value="/">dividation</td>
             </tr>
 
             <tr>
