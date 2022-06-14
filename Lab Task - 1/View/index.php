@@ -12,36 +12,32 @@
     <form action="../Control/taskone.php" method="post">
         <table>
             <tr>
-                <th><label for="num1">1st Number:</label></th>
-                <th><input type="text" name="num1"></th>
+                <td><label for="num1">1st Number:</label></td>
+                <td><input type="text" name="num1"></td>
             </tr>
 
             <tr>
-                <th><label for="num2">2nd Number:</label></th>
-                <th><input type="text" name="num2"><br></th>
+                <td><label for="num2">2nd Number:</label></td>
+                <td><input type="text" name="num2"><br></td>
             </tr>
 
             <tr>
-                <th>Sum:</th>
-                <th><input type="radio" name="func" value="+">
-                    <label for="func">plus</label>
-                </th>
+                <td>Sum:</td>
+                <td><input type="radio" name="func" value="+"> <label for="func">plus</label>
+                </td>
 
-                <th><input type="radio" name="func" value="-">
-                    <label for="func">minus</label>
-                </th>
+                <td><input type="radio" name="func" value="-"> <label for="func">minus</label>
+                </td>
 
-                <th><input type="radio" name="func" value="*">
-                    <label for="func">multiplication</label>
-                </th>
+                <td><input type="radio" name="func" value="*"> <label for="func">multiplication</label>
+                </td>
 
-                <th><input type="radio" name="func" value="/">
-                    <label for="func">dividation</label>
-                </th>
+                <td><input type="radio" name="func" value="/"> <label for="func">dividation</label>
+                </td>
             </tr>
 
             <tr>
-                <th><input type="submit" name="submit"></th>
+                <td><input type="submit" name="submit"></td>
             </tr>
 
         </table>
