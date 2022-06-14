@@ -22,7 +22,7 @@
             </tr>
 
             <tr>
-                <td>Sum:</td>
+                <td>Calculation:</td>
                 <td><input type="radio" name="func" value="+">plus
 
                 <input type="radio" name="func" value="-">minus
