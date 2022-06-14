@@ -11,18 +11,23 @@ echo"<br>";
 echo "1st number ".$name2;
 echo"<br>";
 
-if ($func == "+") {
+if ($func == "+")
+{
     echo"Addition: ", $name + $name2;
 }
 
-if ($func == "-") {
+if ($func == "-")
+{
     echo"Subtraction: ", $name - $name2;
 }
 
-if ($func == "*") {
+if ($func == "*")
+{
     echo"Multiplication:", $name * $name2;
 }
 
-if ($func == "/") {
+if ($func == "/")
+{
     echo"Division: ", $name / $name2;
 }
+?>
