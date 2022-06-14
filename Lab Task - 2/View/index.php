@@ -13,7 +13,7 @@ include("../Control/process.php");
 
 <body>
     <h1>Registration Form </h1>
-    <form action="../control/task2.php" method="post">
+    <form action="" method="post">
         <table>
             <tr>
                 <td>
@@ -83,7 +83,7 @@ include("../Control/process.php");
             </tr>
             <tr>
                 <td>
-                    <input type="submit" name="Submit">
+                    <input type="submit" name="submit">
                     <input type="reset" name="Reset">
                 </td>
             </tr>

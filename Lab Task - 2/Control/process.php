@@ -14,7 +14,7 @@ if (isset($_POST['submit']))
     echo '<br>';
 
         $LastName = $_REQUEST['LastName'];
-        if (empty($LastName)) 
+        if (empty($LastName))
     {
         echo 'Please Enter a valid Last Name';
     } else
@@ -26,10 +26,10 @@ if (isset($_POST['submit']))
 
     $Age = $_REQUEST['Age'];
 
-        if ($Age == '') 
+        if ($Age == '')
     {
         echo 'Please Enter your Age ';
-    } else 
+    } else
     {
         echo 'Your Age is ' . $Age;
     }
@@ -37,17 +37,17 @@ if (isset($_POST['submit']))
     echo '<br>';
 
     if (
-        isset($_POST['designation1']) || isset($_POST['Desgination2']) || isset($_POST['Desgination3']))
+        isset($_POST['Desgination1']) || isset($_POST['Desgination2']) || isset($_POST['Desgination3']))
         {
             if (isset($_POST['Desgination1'])) {
                 echo 'Your Have Selected Junior Programmer ';
                 echo '<br>';
             }
-            if (isset($_POST['designation2'])) {
+            if (isset($_POST['Desgination2'])) {
                 echo 'Your Have Selected Senior Programmer';
                 echo '<br>';
             }
-            if (isset($_POST['designation3'])) {
+            if (isset($_POST['Desgination3'])) {
                 echo 'Your Have Selected Project Lead';
                 echo '<br>';
             }
@@ -57,7 +57,7 @@ if (isset($_POST['submit']))
 
     echo '<br>';
 
-    
+
     if (
         isset($_POST['PreferredLanguage1']) ||
         isset($_POST['PreferredLanguage2']) ||
