@@ -1,19 +1,19 @@
 <?php
-  $nameErr = "";
-  $name2Err = "";
-  $AgeErr = "";
-  $passErr = "";
-  $emailErr = "";
-  $fileErr = "";
-  $desigErr ="";
-  $LanErr ="";
-  $Designation="";
-  $Language="";
-  $fromdata ="";
-  $filepath ="";
+$nameErr = "";
+$name2Err = "";
+$AgeErr = "";
+$passErr = "";
+$emailErr = "";
+$fileErr = "";
+$desigErr ="";
+$LanErr ="";
+$Designation="";
+$Language="";
+$fromdata ="";
+$filepath ="";
 if(isset($_POST["Submit"]))
 {
- 
+
 $name = $_POST["fname"];
 $name2 = $_POST["lname"];
 $Age = $_POST["age"];
@@ -31,15 +31,12 @@ if(isset($Designation))
 }
 else{$Designation = $_POST["designation"];}
 
-
-   
-
-        if (empty($name))
+    if (empty($name))
     {
         $nameErr ='Please Enter First Name';
     }
-      else if(is_numeric($name))
-      {
+        else if(is_numeric($name))
+        {
         $nameErr ='First Name can not be numeric';
       }
          else
@@ -141,19 +138,13 @@ else{$Designation = $_POST["designation"];}
 
    
     if (strlen($pass) < 5) {
-        $passErr =  'Enter a valid password';
+        $passErr =  'Enter a valid password <br>';
     } else
      {
-        echo 'password is valid';
+        echo 'password is valid ';
     }
 
 echo $_FILES["myfile"]["name"];
-/*
-if(move_uploaded_file($_FILES["myfile"]["tmp_name"],"../uploads/myfile.pdf"))
-{
-    echo "File Uploaded";
-}
-*/
 
 if(move_uploaded_file($_FILES["myfile"]["tmp_name"],"../uploads/".$_FILES["myfile"]["name"]))
 { $filepath = "../uploads/".$_FILES["myfile"]["name"];
@@ -162,7 +153,6 @@ if(move_uploaded_file($_FILES["myfile"]["tmp_name"],"../uploads/".$_FILES["myfil
 
 else
 $fileErr = 'Upload Error';
-//file type diye validation je kon type file upload kortese
 $formdata = array(
     'firstname'=>$_POST["fname"],
     'lastname'=>$_POST["lname"],
@@ -172,9 +162,6 @@ $formdata = array(
     'language'=>$Language,
     'designation'=>$_POST["designation"],
     'filepath'=>$filepath
-
-   
-
 );
 $existingdata = file_get_contents('../Data/data.json');
 $tempJSONdata = json_decode($existingdata);
@@ -192,13 +179,11 @@ echo 'No Data Saved';
 $data = file_get_contents("../Data/data.json");
 $mydata = json_decode($data);
 foreach($mydata as $myobject)
-     {
-     foreach($myobject as $key=>$value)
+    {
+    foreach($myobject as $key=>$value)
     {
         echo $key." => ".$value."<br>";
     }
     }
 }
-
-
 ?>
