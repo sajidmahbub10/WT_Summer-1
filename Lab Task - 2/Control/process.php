@@ -98,11 +98,10 @@ if (isset($_POST['submit']))
 
     $Password = $_REQUEST['Password'];
     if (strlen($Password) < 8) {
-        echo 'Enter a valid password';
-    } else
-     {
         echo 'password is valid';
+    } else
+    {
+        echo 'Enter a valid password';
     }
-
 }
 ?>
