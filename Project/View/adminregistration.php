@@ -51,7 +51,7 @@
                         <td>
                             <center>
                                 <label>Email: &nbsp &nbsp &nbsp</label>
-                                <input type="email">
+                                <input type="email"> <br><br>
                             </center>
                         </td>
                     </tr>

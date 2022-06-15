@@ -33,8 +33,10 @@
 
                     <tr>
                         <td>
-                            <input type="submit" name="submit" value="Login">
-                            <input type="submit" name="registration" value="Registration">
+                            <center>
+                                <input type="submit" name="submit" value="Login">
+                                <input type="submit" name="registration" value="Registration">
+                            </center>
                         </td>
                     </tr>
                 </table>
