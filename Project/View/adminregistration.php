@@ -19,32 +19,48 @@
                 <table>
                     <tr>
                         <td>
-                            <label>Firstname: </label>
-                            <input type="text" name="fname">
-                            <br><br>
+                            <center>
+                                <label>Firstname: </label>
+                                <input type="text" name="fname">
+                                <br><br>
+                            </center>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <label>Lastname: </label>
-                            <input type="text" name="lname">
-                            <br><br>
+                            <center>
+                                <label>Lastname: </label>
+                                <input type="text" name="lname">
+                                <br><br>
+                            </center>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <label>Username: </label>
-                            <input type="text" name="uname">
-                            <br><br>
+                            <center>
+                                <label>Username: </label>
+                                <input type="text" name="uname">
+                                <br><br>
+                            </center>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <label>Email: </label>
-                            <input type="email">
+                            <center>
+                                <label>Email: &nbsp &nbsp &nbsp</label>
+                                <input type="email">
+                            </center>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <center>
+                                <input type="submit" name="submit" value="Register">
+                            </center>
                         </td>
                     </tr>
                 </table>
