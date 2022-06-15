@@ -21,7 +21,7 @@
                         <td>
                             <center>
                                 <label>Firstname: </label>
-                                <input type="text" name="fname">
+                                <input type="text" name="fname" placeholder="Enter your firstname">
                                 <br><br>
                             </center>
                         </td>
@@ -31,7 +31,7 @@
                         <td>
                             <center>
                                 <label>Lastname: </label>
-                                <input type="text" name="lname">
+                                <input type="text" name="lname" placeholder="Enter your lastname">
                                 <br><br>
                             </center>
                         </td>
@@ -41,7 +41,7 @@
                         <td>
                             <center>
                                 <label>Username: </label>
-                                <input type="text" name="uname">
+                                <input type="text" name="uname" placeholder="Enter your username">
                                 <br><br>
                             </center>
                         </td>
@@ -51,7 +51,25 @@
                         <td>
                             <center>
                                 <label>Email: &nbsp &nbsp &nbsp</label>
-                                <input type="email"> <br><br>
+                                <input type="email" placeholder="Enter your email"> <br><br>
+                            </center>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <center>
+                                <label>NID: &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                                <input type="text" name="nid" placeholder="Enter your valid nid"> <br><br>
+                            </center>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <center>
+                                <label>Phone: &nbsp; &nbsp; &nbsp;</label>
+                                <input type="text" name="phone" placeholder="Enter your phone number"> <br><br>
                             </center>
                         </td>
                     </tr>
