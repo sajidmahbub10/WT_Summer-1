@@ -20,7 +20,9 @@
                     <tr>
                         <td>
                             <center>
-                                <label>Firstname: </label>
+                                <label>
+                                    <font>Firstname: </font>
+                                </label>
                                 <input type="text" name="fname" placeholder="Enter your firstname">
                                 <br><br>
                             </center>
