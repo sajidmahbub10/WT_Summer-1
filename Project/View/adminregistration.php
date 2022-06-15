@@ -11,7 +11,7 @@
 <body>
     <center>
         <h1>Welcome to XYZ Bank Limited.</h1>
-        <p><strong>To do further work, please log in.</strong></p>
+        <p><strong>To do further work, please register.</strong></p>
         <br><br><br><br><br><br><br><br>
 
         <form action="" method="POST" enctype="multipart/form-data">
